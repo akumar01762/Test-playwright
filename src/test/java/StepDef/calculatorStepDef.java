@@ -8,9 +8,11 @@ import static org.hamcrest.Matchers.*;
 
 public class calculatorStepDef {
 
+    MyTest myTest = new MyTest();
     Integer result ;
     @Given("I have a calculator")
     public void i_have_a_calculator() {
+        myTest.mytest();
         System.out.println("i have calculator");
     }
     @When("I add {int} and {int}")
