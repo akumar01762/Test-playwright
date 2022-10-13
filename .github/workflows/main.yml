@@ -3,8 +3,8 @@ name: Gemfire UI CI
 on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-and-test:
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v3
