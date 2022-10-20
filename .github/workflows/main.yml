@@ -3,8 +3,8 @@ name: Gemfire UI CI
 on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-and-test:
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v3
@@ -14,4 +14,9 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Run with Maven
-        run: mvn clean test
+        run: mvn -B package --file pom.xml
+      - run: mkdir reports && cp target/*.jar reports
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Package
+          path: reports
