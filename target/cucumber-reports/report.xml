@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.478">
-    <testcase classname="Calculator" name="Adding two numbers" time="0.167">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.481">
+    <testcase classname="Calculator" name="Adding two numbers" time="6.247">
         <system-out>
             <![CDATA[Given I have a calculator...................................................passed
 When I add 1 and 2..........................................................passed

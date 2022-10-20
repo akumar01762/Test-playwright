@@ -1,6 +1,8 @@
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+package StepDef;
+
+import pageObjects.MyTest;
+import io.cucumber.java.en.*;
+
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -8,11 +10,12 @@ import static org.hamcrest.Matchers.*;
 
 public class calculatorStepDef {
 
-    MyTest myTest = new MyTest();
+    MyTest mytest = new MyTest();
     Integer result ;
+
     @Given("I have a calculator")
     public void i_have_a_calculator() {
-        myTest.mytest();
+        mytest.mytest();
         System.out.println("i have calculator");
     }
     @When("I add {int} and {int}")
